@@ -32,7 +32,7 @@ def countKnightPaths(matrix, currentX: int, currentY: int, knightMoves: int = 0,
     # Check if the valid move was a vowel or empty. If the vowel count is greater than 2 then the move was invalid.
     newVowelCount = vowelCount + 1 if matrix[currentX][currentY] in vowels else vowelCount
 
-    if (matrix[currentX][currentY] is None) or (vowelCount > 2):
+    if (vowelCount > 2):
         return 0
     if knightMoves == 7:
         return 1
