@@ -52,7 +52,7 @@ def solveMatrix(matrix):
 
     # Iterate through each cell in the matrix and get the number of valid paths from each.
     for y in range(len(matrix)):
-        for x in range(len(matrix)):
+        for x in range(len(matrix[0])):
             validPathsInMatrix += countKnightPaths(matrix, x, y)
 
     print('Valid Paths In Matrix: ' + str(validPathsInMatrix))
